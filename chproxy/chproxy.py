@@ -46,7 +46,7 @@ def main(argv):
             host = arg
         elif opt in ("-P", "--port"):
             port = arg
-        elif opt == "all-protocols":
+        elif opt == "--all-protocols":
             all_protocols = True
 
     if os.name == 'posix':
@@ -58,9 +58,9 @@ def main(argv):
             print('Auto mode is not supported in this chproxy version v.{}.'.format(__version__))
         elif mode == 'manual':
             if all_protocols:
-                for protocol in protocols:
-                    subprocess.run('gsettings set org.gnome.system.proxy.{} host {}'.format(protocol, host).split(' '))
-                    subprocess.run('gsettings set org.gnome.system.proxy.{} port {}'.format(protocol, port).split(' '))
+                for protocol_ in protocols:
+                    subprocess.run('gsettings set org.gnome.system.proxy.{} host {}'.format(protocol_, host).split(' '))
+                    subprocess.run('gsettings set org.gnome.system.proxy.{} port {}'.format(protocol_, port).split(' '))
             else:
                 subprocess.run('gsettings set org.gnome.system.proxy.{} host {}'.format(protocol, host).split(' '))
                 subprocess.run('gsettings set org.gnome.system.proxy.{} port {}'.format(protocol, port).split(' '))
