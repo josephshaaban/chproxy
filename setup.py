@@ -1,17 +1,23 @@
 from setuptools import setup
 
-setup(
-    name='chproxy',
-    version='0.1',
-    description='A simple proxy applier that applies proxy system-wide, on linux OS.',
-    url='http://github.com/josephshaaban/chproxy',
-    author='Joseph Shaaban',
-    author_email='josephsha3ban@gmail.com',
-    license='MIT',
-    packages=['chproxy'],
-    install_requires=[
-        'getopt',
-        'subprocess'
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
+setuptools.setup(
+    name="chproxy",
+    version="0.1",
+    author="Joseph Shaaban",
+    author_email="josephsha3ban@gmail.com",
+    description="A simple proxy applier that applies proxy system-wide, on linux OS.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="http://github.com/josephshaaban/chproxy",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX",
     ],
-    zip_safe=False
 )
