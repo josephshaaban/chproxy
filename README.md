@@ -7,7 +7,7 @@ To apply proxy system-wide on linux
 * Install package: 
   
 	```bash
-	pip install cloudlog
+	pip install chproxy
 	```
 
 * Use it from terminal immediately:
