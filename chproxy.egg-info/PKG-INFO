@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: chproxy
+Version: 0.1
+Summary: A simple proxy applier that applies proxy system-wide, on linux OS.
+Home-page: http://github.com/josephshaaban/chproxy
+Author: Joseph Shaaban
+Author-email: josephsha3ban@gmail.com
+License: UNKNOWN
+Description: # chproxy
+        
+        To apply proxy system-wide on linux
+        
+        ## How to use
+        
+        * Install package: 
+          
+        	```bash
+        	pip install chproxy
+        	```
+        
+        * Use it from terminal immediately:
+        
+        	```bash
+        	chproxy --mode manual --protocol https --host host.proxy.net --port proxy_port
+        	```	
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown

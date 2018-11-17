@@ -1,0 +1,8 @@
+README.md
+setup.py
+chproxy/__init__.py
+chproxy/chproxy.py
+chproxy.egg-info/PKG-INFO
+chproxy.egg-info/SOURCES.txt
+chproxy.egg-info/dependency_links.txt
+chproxy.egg-info/top_level.txt
